@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider">
+        <!-- Слайд 1: Главный экран -->
+        <div class="slide">
+            <h1 class="main-header">Pixel Art Studio</h1>
+            <a class="tool-button" href="second.html">
+                Открыть Pixilart
+            </a>
+        </div>
+
+        <!-- Слайд 2: Информация -->
+        <div class="slide">
+            <div class="info-content">
+                <h2>Основы Pixel Art</h2>
+                <ul class="info-list">
+                    <li>🖌️ Точечная проработка каждого пикселя</li>
+                    <li>🎮 Истоки в ретро-играх 80-90х годов</li>
+                    <li>💡 Неограниченная палитра цветов</li>
+                    <li>✨ Ностальгическая эстетика</li>
+                    <li>🖼️ Часто используется в инди-играх</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Слайд 3: Галерея -->
+        <div class="slide">
+            <h2>Примеры работ</h2>
+            <div class="gallery">
+                <img src="https://i.pinimg.com/736x/fb/3d/fa/fb3dfa034112b26d241d02c305717462.jpg" alt="Pixel Art 1">
+                <img src="https://i.pinimg.com/736x/00/af/62/00af62d137edfc6676821d36d9f6e8c7.jpg" alt="Pixel Art 2">
+                <img src="https://i.pinimg.com/736x/e6/ea/76/e6ea76a7a7307632b999f7b45a8a67de.jpg" alt="Pixel Art 3">
+                <img src="https://i.pinimg.com/736x/31/7b/34/317b341646c075991c15b7045ebe8150.jpg" alt="Pixel Art 4">
+                <img src="https://i.pinimg.com/474x/df/32/d3/df32d3f1b2b1ef22d356a6ea0d3e9212.jpg" alt="Pixel Art 5">
+                <img src="https://i.pinimg.com/736x/be/51/9c/be519c196874df2e407eb01ea56eeec1.jpg" alt="Pixel Art 6">
+            </div>
+        </div>
+
+        <!-- Слайд 4: Редактор -->
+        <div class="slide">
+            <div class="pixel-editor">
+                <canvas id="pixelCanvas" width="500" height="500"></canvas>
+                <div class="tools-panel">
+                    <div class="selected-color" id="selectedColor"></div>
+                    <div class="color-picker" id="colorPicker"></div>
+                    <div class="add-color-section">
+                        <input type="color" id="newColor">
+                        <button class="add-color-btn" onclick="addCustomColor()">+ Добавить цвет</button>
+                    </div>
+                    <button class="tool-button" onclick="clearCanvas()">🧹 Очистить холст</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Навигационные стрелки -->
+        <div class="arrow left" onclick="prevSlide()">❮</div>
+        <div class="arrow right" onclick="nextSlide()">❯</div>
+    </div>
+
+
+    <script src="pixel.js">
+
+    </script>
+    <script src="pixel.js">
+
+    </script>
+</body>
+</html>
